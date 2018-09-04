@@ -22,7 +22,7 @@ router.post(
 
 router.get('', getPosts);
 
-router.put('/:id', extractFile, editPost);
+router.put('/:id', checkAuth,extractFile, editPost);
 
 
 

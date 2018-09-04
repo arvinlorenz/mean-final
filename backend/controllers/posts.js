@@ -67,6 +67,7 @@ exports.getPosts = (req,res,next)=>{
 
 
 exports.editPost = (req,res,next)=>{
+    console.log(req.userData)
     let imagePath = req.body.imagePath;
     if(req.file){
         const url = req.protocol + '://' + req.get("host");
